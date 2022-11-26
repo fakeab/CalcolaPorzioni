@@ -1,6 +1,8 @@
 var elements;
 var LAST_ONE_EMPTY = 'empty';
 var lastOne = LAST_ONE_EMPTY;
+var somma;
+
 
 calculate = function (a1, a2, b1, b2) {
     var valued = '';
@@ -9,15 +11,17 @@ calculate = function (a1, a2, b1, b2) {
     if (a2 != '') { valued += '2'; }
     if (b1 != '') { valued += '3'; }
     if (b2 != '') { valued += '4'; }
-
+    
     if (lastOne !== LAST_ONE_EMPTY) {
         valued = lastOne;
     }
 
     if (valued.length > 2 && valued !== '1234') {
+        
         switch (valued) {
             case '123':
-                elements.B2.value = b1 * a2 / a1;
+                somma = +a1 + +a2;
+                elements.B2.value = (a1 * b1) / (somma);
                 break;
             case '124':
                 elements.B1.value = b2 * a1 / a2;

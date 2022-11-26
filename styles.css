@@ -1,6 +1,8 @@
 body {
     margin: 0;
     background-color: #ffffff;
+    font-family: Arial;
+    font-weight: bold;
 }
 
 .hidden {
@@ -30,17 +32,23 @@ body {
     margin: 0;
 }
 
-.input.-type-a {
-    background-color: rgba(232, 183, 26, 0.1);
-    border-color: rgba(232, 183, 26, 0.3);
-    color: #775e0d;
-}
+    .input.-type-a {
+        background-color: rgba(168, 166, 157, 0.1);
+        border-color: rgba(125, 124, 120, 0.3);
+        color: #c9c6bb;
+    }
 
-.input.-type-b {
-    background-color: rgba(31, 218, 154, 0.1);
-    border-color: rgba(31, 218, 154, 0.3);
-    color: #0e6647;
-}
+    .input.-type-b {
+        background-color: rgba(91, 94, 92, 0.1);
+        border-color: rgba(36, 36, 36, 0.3);
+        color: #775e0d;
+    }
+
+    .input.-type-c {
+        background-color: rgba(0, 120, 39, 0.1);
+        border-color: rgba(34, 128, 65, 0.4);
+        color: #277d43;
+    }
 
 .button {
     background-color: #ffffff;
@@ -65,6 +73,10 @@ body {
 
 .input.-type-b:focus {
     border-color: rgba(31, 218, 154, 0.5);
+}
+
+.input.-type-c:focus {
+    border-color: rgba(34, 128, 65, 0.5);
 }
 
 @media all and (min-width: 640px) {
