@@ -13,7 +13,8 @@ body {
     display: flex;
     margin: 100px auto;
     width: 320px;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    
 }
 
 .item {
