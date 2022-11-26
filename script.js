@@ -2,7 +2,7 @@ var elements;
 var LAST_ONE_EMPTY = 'empty';
 var lastOne = LAST_ONE_EMPTY;
 var somma;
-
+var risultato;
 
 calculate = function (a1, a2, b1, b2) {
     var valued = '';
@@ -21,7 +21,9 @@ calculate = function (a1, a2, b1, b2) {
         switch (valued) {
             case '123':
                 somma = +a1 + +a2;
-                elements.B2.value = (a1 * b1) / (somma);
+                risultato = (a1 * b1) / (somma)
+                elements.B2.value = +risultato.toFixed(1);
+               
                 break;
             case '124':
                 elements.B1.value = b2 * a1 / a2;
