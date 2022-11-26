@@ -5,27 +5,37 @@
     <title>Calcola porzioni</title>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <h1 class="hidden">Online 3-Satz (Dreisatz) berechnen</h1>
+    <h1 class="hidden">Calcola porzioni</h1>
 
     <div class="container">
         <div class="item">
-            <p>I tuoi grammi prodotto SECCO</p> 
+            <p>Grammi tuoi secchi</p>
             <input type="number" class="input -type-a" id="type-a-top">
         </div>
         <div class="item">
-            <p>Totale grammi prodotto COTTO</p>
+            <p>Totale cotto</p>
             <input type="number" class="input -type-b" id="type-b-top">
         </div>
         <div class="item">
-            <p>I suoi grammi prodotto SECCO</p>
+            <p>Grammi suoi secchi</p>
             <input type="number" class="input -type-a" id="type-a-bottom">
         </div>
+
         <div class="item">
-            <p>I tuoi grammi prodotto COTTO</p>
-            <input type="number" class="input -type-c" id="type-b-bottom">
+            <p>Grammi tuoi cotti</p>
+            <input type="number" class="input -type-c" id="type-b-bottom" readonly>
         </div>
+
+        <div class="item">
+            <p>Grammi suoi cotti</p>
+            <input type="number" class="input -type-c" id="type-c-bottom" readonly>
+        </div>
+
+
+
         <div class="item">
             <button type="reset" class="button" id="delete">Resetta tutto!</button>
         </div>

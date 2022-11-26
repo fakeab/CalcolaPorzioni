@@ -45,6 +45,7 @@ body {
     }
 
     .input.-type-c {
+        
         background-color: rgba(0, 120, 39, 0.1);
         border-color: rgba(34, 128, 65, 0.4);
         color: #277d43;
